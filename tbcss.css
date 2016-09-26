@@ -1,0 +1,13 @@
+#tb,tr,td,th{
+    border: 1px solid cyan;
+    /*align-self: center;*/
+    /*align-content:right;*/
+    border-collapse: collapse;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+#u{
+    list-style-type: hiragana;
+    outline: dashed chartreuse 2px;
+}

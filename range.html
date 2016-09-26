@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>range对象</title>
+    <script type="application/javascript">
+        function del(){
+            var content = document.getElementById("divname");
+  //          var sel = window.getSelection();
+            var rangeobj = document.createRange();
+            var Node = content.firstChild;
+            rangeobj.setStart(Node,2);
+            rangeobj.setEnd(Node,3);
+            rangeobj.deleteContents();
+        }
+        var rangeobj2 = document.createRange();
+        function select(){
+            var div = document.getElementById("divname");
+            rangeobj2.selectNode(div);
+        }
+        function collapse(){
+            rangeobj2.collapse(false);
+        }
+        function show(){
+            alert(rangeobj2.toString());
+        }
+    </script>
+</head>
+<body>
+    <div id="divname" style="color: #9249a5">你可以删除我，但是不能忘记我！
+    </div>
+    <br />
+    <button onclick="del()">come on!</button>
+    <button onclick="select()">选择</button>
+    <button onclick="collapse()">重复</button>
+    <button onclick="show()">显示</button>
+</body>
+</html>

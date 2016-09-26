@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式图片</title>
+
+</head>
+<body>
+<!--两种方法都可实现 推荐第一种picture的方法 本程序中sizes方法存在错误 当需要使用时请查sizes属性的资料之后再写-->
+
+<!--方法一-->
+    <picture>
+        <source media="(max-width:480px)" srcset="img/picture1.jpg">
+        <source media="(max-width:640px)" srcset="img/picture2.jpg">
+        <source media="(max-width:736px)" srcset="img/picture3.jpg">
+        <source media="(max-width:900px)" srcset="img/picture4.jpg">
+        <img src="img/picture5.jpg" alt="响应式图片"/>
+    </picture>
+<!--方法二-->
+    <!--<img sizes="(min-width:900px) 900px,100vm"-->
+         <!--srcset="img/picture1.jpg 480,-->
+                 <!--img/picture2.jpg 640,-->
+                 <!--img/picture3.jpg 736,-->
+                 <!--img/picture4.jpg 900"-->
+         <!--src="img/picture5.jpg" alt="响应式图片"/>-->
+
+    <link href="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" rel="script">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3遮幕效果</title>
+    <style>
+        img{
+            height: 100%;
+            -webkit-mask-image: url("img/apple.png"),url("img/banana.png");
+           -webkit-mask-repeat:  no-repeat;
+            /*mask-image: url("img/border2.png");*/
+            -webkit-mask-position: 0px 50px,20px 57px;
+            -webkit-mask-composite: copy;
+        }
+    </style>
+    <!--mask总属性：-->
+                                     <!--mask-image:url("");-->
+    <!--设置遮罩模式                      mask-mode: alpha(遮罩图像的透明度部分用作遮罩）|luminance（遮罩图像的亮度作为遮罩）|auto-->
+                                     <!--mask-repeat:repeat-x|repeat-y|[repeat|space|round|no-repeat]{1,2}-->
+                                     <!--mask-position:类比于background-position-->
+    <!--设置遮罩影响区域                   mask-clip:<geometry-box>|no-clip-->
+    <!--设置计算mask-position的参考原点位置 mask-origin:<geometry-box>-->
+    <!--设置遮罩大小     mask-size:-->
+    <!--设置当前遮罩图层与下面图层的结合方式  mask-composite:add|substract|intersect|exclue-->
+</head>
+<body>
+<img src="img/pure.png">
+</body>
+</html>

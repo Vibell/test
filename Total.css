@@ -1,0 +1,127 @@
+/*.mychange{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*border: double firebrick;*/
+    /*-webkit-transition: height 2s,width 2s,-webkit-transform 2s;*/
+    /*transition: height 2s,width 2s,transform 2s;*/
+/*}*/
+/*.mychange:hover{*/
+    /*width: 400px;*/
+    /*height: 400px;*/
+    /*transform:translate(100px,100px);*/
+    /*-webkit-transform: translate(100px,100px);*/
+/*}*/
+/*.p1{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*position: relative;*/
+    /*-webkit-animation: anim1 6s ;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    /*-webkit-animation-direction:alternate;*/
+    /*-webkit-animation-iteration-count: 5;*/
+/*}*/
+/*.p1:hover{*/
+    /*animation-play-state:paused;*/
+/*}*/
+/*.p2:hover{*/
+    /*animation-play-state:paused;*/
+/*}*/
+
+/*.p2{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*position: relative;*/
+    /*!*display: none;*!*/
+    /*!*display: inline;*!*/
+    /*-webkit-animation:anim2 6s 6s;*/
+    /*!*-webkit-animation-fill-mode:forwards;*!*/
+    /*-webkit-animation-direction:alternate;*/
+    /*-webkit-animation-iteration-count: 5;*/
+/*}*/
+/*@keyframes anim1 {*/
+    /*0%{*/
+        /*left: 0px;*/
+        /*top: 0px;*/
+    /*}*/
+    /*25%{*/
+        /*left: 100px;*/
+        /*top: 100px;}*/
+    /*50%{*/
+        /*left: 0px;*/
+        /*top: 100px;*/
+    /*}*/
+    /*100%{*/
+        /*!*display: none;*!*/
+        /*!*-webkit-transform: rotate(360deg);*!*/
+        /*left: 0px;*/
+        /*top: 200px;*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes anim1 {*/
+    /*0%{*/
+
+        /*left: 0px;*/
+        /*top: 0px;*/
+    /*}*/
+    /*25%{*/
+        /*left: 100px;*/
+        /*top: 100px;*/
+    /*}*/
+    /*50%{*/
+        /*left: 0px;*/
+        /*top: 100px;*/
+        /*!*transform:rotate(360deg);*!*/
+        /*!*-webkit-transform: rotate(360deg);*!*/
+    /*}*/
+    /*100%{*/
+        /*!*display: none;*!*/
+        /*left: 0px;*/
+        /*top: 200px;*/
+    /*}*/
+
+/*}*/
+
+/*@keyframes anim2 {*/
+    /*0%{*/
+        /*display:inline;*/
+        /*left: 100px;*/
+        /*top: 100px;}*/
+    /*100%{*/
+        /*display:inline;*/
+        /*left: 100px;*/
+        /*top: 0px;*/
+    /*}*/
+
+/*}*/
+/*@-webkit-keyframes anim2 {*/
+    /*0% {*/
+        /*display: inline;*/
+        /*left: 100px;*/
+        /*top: 100px;*/
+    /*}*/
+    /*100% {*/
+        /*display: inline;*/
+        /*left: 100px;*/
+        /*top: 0px;*/
+    /*}*/
+/*}*/
+
+/****以下内容属于html+css.html中****/
+.body_title{
+    font-family: 微软雅黑;
+    font-size: 30px;
+    /*position: fixed;*/
+
+}
+.body_content{
+
+    /*column-count: 4;*/
+    column-gap: 30px;
+    /*-webkit-column-count: 4;*/
+    -webkit-column-gap: 30px;
+    column-width: 200px;
+    -webkit-column-width: 200px;
+}
+.body_content img{
+    width: 250px;
+}

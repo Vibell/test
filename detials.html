@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details and summary</title>
+   <script type="application/javascript">
+        function lifesclick(){
+            var p=document.getElementById("usulife");
+            var detail1=document.getElementById("life");
+            if (!detail1.open) {
+                p.style.visibility = "visible";
+            } else {
+                p.style.visibility = "hidden";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <details id="life">
+        <summary onclick="lifesclick()">My usual life</summary>
+        <p id="usulife" style="visibility: hidden">reading play volleyball go shopping...</p>
+    </details>
+</body>
+</html>

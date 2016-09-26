@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <script src="massage.js"></script>
+    <link rel="stylesheet" type="text/css" href="text.css">
+    <style>
+        [value]{
+            color: red;
+            font-family: "Arial Black";
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <table border='1' id="name">
+
+        </table>
+    </div>
+        <p>这是用来显示字体的</p>
+        <form action="http://localhost:2333/api" method="post">
+            <input type="text" name="date" placeholder="日期"/>
+            <textarea rows="20" cols="30" id="message" name="comment">
+            </textarea>
+            <br />
+            <input type="submit" onclick="Save('message')" value="提交留言">
+            <input type="button" onclick="clear1()" value="删除留言" >
+            <input type="button" onclick="GetApi()" value="GET IT">
+        </form>
+        <div id="diva"style="position:static">sdgik</div>
+        <style>
+            #diva{
+                margin: 100px;
+            }
+        </style>
+</body>
+</html>

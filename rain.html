@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://www.pm25.com/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.pm25.com/css/index.css" rel="stylesheet" type="text/css" /> <script src="http://www.pm25.com/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+<div class="banner_index_width">
+    <div class="banner_index">
+        <!--切换城市-->
+        <div class="bi_location">
+            <a class="bi_location_add minicity_clk" href="javascript:void(0)"></a>
+            <h2 class="bi_loaction_city">杭州</h2>
+            <!--鼠标划上来后，在这里加“bi_location_content_hover”-->
+            <div class="bi_location_content ">
+                <a class="bi_location_content_dropdown" href="javascript:void(0)"><span class="mon_span">选择监测点</span><i></i></a>
+                <div class="bi_location_content_active hide">
+                    <ul>
+                        <li><a class="dontSelect current" href="javascript:void(0)" mon="选择监测点" aqi="74" pm25="50" qua="良" lv="2" url="/city/杭州.html"><i>•</i>全部监测点</a></li>
+                        <li><a href="javascript:void(0)" mon="滨江" aqi="89" pm25="62" qua="良" lv="2" url="/city/mon/aqi/杭州/滨江.html"><i>•</i>滨江</a></li>
+                        <li><a href="javascript:void(0)" mon="西溪" aqi="79" pm25="58" qua="良" lv="2" url="/city/mon/aqi/杭州/西溪.html"><i>•</i>西溪</a></li>
+                        <li><a href="javascript:void(0)" mon="千岛湖" aqi="29" pm25="20" qua="优" lv="1" url="/city/mon/aqi/杭州/千岛湖.html"><i>•</i>千岛湖</a></li>
+                        <li><a href="javascript:void(0)" mon="下沙" aqi="51" pm25="31" qua="良" lv="2" url="/city/mon/aqi/杭州/下沙.html"><i>•</i>下沙</a></li>
+                        <li><a href="javascript:void(0)" mon="卧龙桥" aqi="95" pm25="71" qua="良" lv="2" url="/city/mon/aqi/杭州/卧龙桥.html"><i>•</i>卧龙桥</a></li>
+                        <li><a href="javascript:void(0)" mon="浙江农大" aqi="65" pm25="44" qua="良" lv="2" url="/city/mon/aqi/杭州/浙江农大.html"><i>•</i>浙江农大</a></li>
+                        <li><a href="javascript:void(0)" mon="朝晖五区" aqi="90" pm25="67" qua="良" lv="2" url="/city/mon/aqi/杭州/朝晖五区.html"><i>•</i>朝晖五区</a></li>
+                        <li><a href="javascript:void(0)" mon="和睦小学" aqi="87" pm25="64" qua="良" lv="2" url="/city/mon/aqi/杭州/和睦小学.html"><i>•</i>和睦小学</a></li>
+                        <li><a href="javascript:void(0)" mon="临平镇" aqi="46" pm25="21" qua="优" lv="1" url="/city/mon/aqi/杭州/临平镇.html"><i>•</i>临平镇</a></li>
+                        <li><a href="javascript:void(0)" mon="城厢镇" aqi="90" pm25="44" qua="良" lv="2" url="/city/mon/aqi/杭州/城厢镇.html"><i>•</i>城厢镇</a></li>
+                        <li><a href="javascript:void(0)" mon="云栖" aqi="98" pm25="73" qua="良" lv="2" url="/city/mon/aqi/杭州/云栖.html"><i>•</i>云栖</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--新闻滚动-->
+        <div class="bi_news">
+            <ul class="bi_news_closed">
+                <li style="margin-top:0px;"><a class="bi_news_closed_dangdi" href="http://www.pm25.com/news/1035.html" target="_blank"><b></b><span>霾克星车载霾表——pm2.5检测仪震撼上市</span></a></li>
+                <li style="margin-top:0px;"><a class="bi_news_closed_dangdi" href="http://www.pm25.com/news/1034.html" target="_blank"><b></b><span>杭版“大气十条”落地 明确PM2.5治理目标</span></a></li>
+                <li style="margin-top:0px;"><a class="bi_news_closed_dangdi" href="http://www.pm25.com/news/1031.html" target="_blank"><b></b><span>青岛PM2.5提前两年达国标 大气和水环境改善</span></a></li>
+                <li style="margin-top:0px;"><a class="bi_news_closed_dangdi" href="http://www.pm25.com/news/1033.html" target="_blank"><b></b><span>牡丹江市中小学生“零距离”体验“PM2.5”</span></a></li>
+            </ul>
+        </div>
+
+        <!--AQI展示-->
+        <div class="bi_aqiarea">
+            <div class="bi_aqiarea_top">
+                <a class="bi_aqiarea_num" href="/city/hangzhou.html">74</a>
+                <!--划上去可以摊开页面底部的曲线图-->
+                <p class="bi_aqiarea_right">
+                    <span class="bi_aqiarea_wuran wuranlevel_2">良</span>
+                    <span class="bi_aqiarea_tips">AQI指数</span>
+                </p>
+                <div class="clear"></div>
+            </div>
+            <div class="bi_aqiarea_bottom">
+                <p>PM2.5浓度：<span class="pm25_span">50</span>微克/立方米</p>
+                <p>击败了全国 17% 的城市，目前城市排名 299 </p>
+            </div>
+        </div>
+
+        <!--[if lte IE 8]>
+        <style type="text/css">
+            a.bi_opentanmu{display:none;}
+        </style>
+        <![endif]-->
+        <!--增加打开弹幕按钮--2014-10-25-->
+        <a class="bi_opentanmu" href="javascript:void(0)"></a>
+        <!-- <a class="bi_opentanmu" href="javascript:void(0)" style="display:none;"></a> -->
+
+        <!--天气位置-->
+        <div class="bi_infoarea">
+            <div class="bi_info">
+                <!--鼠标划到分享按钮上的时候，先增加个“bi_info_hover”，再把下边的“bi_info_active”变为"display:block"-->
+                <a class="bi_info_share " href=""><i></i><span>分享</span></a>
+                <div class="bi_info_share_active" style="display:none">
+                    <a class="bi_info_share_active_sina" title="分享到新浪微博" href="javascript:void(0)"></a>
+                    <a class="bi_info_share_active_qzone" title="分享到QQ空间" href="javascript:void(0)"></a>
+                </div>
+                <p class="bi_info_weather"><img src="http://p1.qhimg.com/d/_hao360/weather/4.png" title="雷阵雨"> <span>雷阵雨</span> 35~27℃</p>
+                <div class="clear"></div>
+            </div>
+            <p class="bi_info_tips">数据来源：中国环境监测总站&nbsp;&nbsp;&nbsp;&nbsp;最后更新：2016-06-22 13:00</p>
+        </div>
+    </div>
+</div>
+
+
+<!--banner部分-底部-雨天-->
+<div class="weather_rain_width">
+    <div class="shatan_width">
+        <div class="weather_rain_shatan"><i class="weather_rain_shatan_content"></i></div>
+    </div>
+    <div class="weather_rain">
+        <div class="weather_rain_yu"><i class="weather_rain_yu_content"></i></div>
+        <div class="weather_rain_xiong"><i class="weather_rain_xiong_content"></i></div>
+        <div class="weather_rain_yusan"><i class="weather_rain_yusan_content"></i></div>
+        <div class="weather_rain_yun"><i class="weather_rain_yun_content"></i></div>
+        <div class="weather_rain_wuyun"><i class="weather_rain_wuyun_content"></i></div>
+        <div class="weather_rain_shuikeng1"><i class="weather_rain_shuikeng1_content"></i></div>
+        <div class="weather_rain_shuikeng2"><i class="weather_rain_shuikeng2_content"></i></div>
+        <div class="weather_rain_shuikeng3"><i class="weather_rain_shuikeng3_content"></i></div>
+
+    </div>
+</div>
+</body>
+</html>

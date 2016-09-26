@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check</title>
+</head>
+<body>
+    <script>
+        function filecheckon(){
+            var url=document.getElementById("url");
+            if (url.value==""){
+                alert("请输入网址");
+                return false;
+            }else if (!url.checkValidity()){
+                alert("格式错误！请输入正确的网址！");
+                return false;
+            }
+        }
+    </script>
+    <form id="formname" novalidate onsubmit="filecheckon()">
+        <label for="url">url</label>
+        <input type="url" id="url" name="url" >
+        <input type="submit">
+    </form>
+</body>
+</html>

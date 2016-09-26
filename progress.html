@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>progress在进度条上的运用</title>
+    <script type="application/javascript">
+        var i = 0;
+        var s1;
+        function nextstep(){
+    //        var s1=setInterval("nextstep()",100);
+           console.log("我不信");
+
+              if (i<=100){
+                  temp(i);
+                  i++;
+              }else {
+                 clearInterval(s1);
+
+              }
+
+        }
+
+        function  temp(pervalue){
+            var tempbar = document.getElementById("progressbar");
+            tempbar.value = pervalue;
+
+        }
+        var s2 = setInterval("show()",1000);
+        function show(){
+
+            time=new Date();
+            hour=time.getHours();
+            minu=time.getMinutes();
+            sec=time.getSeconds();
+            hour = checktime(hour);
+            minu = checktime(minu);
+            sec = checktime(sec);
+  //          console.log(hour);
+            document.getElementById("nowtime").innerHTML=hour+":"+minu+":"+sec;
+        }
+        function checktime(x){
+            if (x<10){
+                x = "0"+ x;
+                return x;
+            }else{
+                return x;
+            }
+        }
+    </script>
+</head>
+<body onload="show()">
+    <p>游戏下载中，请稍后……</p>
+    <br />
+    <progress id="progressbar" max="100"  style="background-color: cornflowerblue;color: #9249a5"><span>加载中</span></progress>
+    <br/>
+    <br/>
+    <input type="button" value="下一步" onclick="s1=setInterval('nextstep()',100);">
+    <p>现在的时间为：<span id="nowtime"></span></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3裁剪效果</title>
+    <!--<link href="Total.css" rel="stylesheet" type="text/css">-->
+    <style type="text/css">
+        img{
+            /*最简单的css裁剪方法*/
+            /*-webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 48% 100%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
+            /*clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 48% 100%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
+
+            /*背景裁剪border-box*/
+            /*border: 1px solid red;*/
+            /*padding:20px*/
+            /*-webkit-background-clip: border-box;*/
+        }
+        /*背景裁剪*/
+        /*borer的颜色和文字的颜色必须固定为例子中的值才能显示效果*/
+        /*改变-webkit-background-clip:border-box|padding-box|content-box|no-clip|text*/
+        .fuck{
+            width:200px;height:200px;
+            background:url("img/picture2.jpg");
+            border:20px solid rgba(0,0,0,0.3);
+            padding:20px;
+            font-size:80px;
+            font-weight:bold;
+            color:rgba(0,0,0,0.1);
+            -webkit-background-clip:text;
+        }
+    </style>
+</head>
+<body>
+    <!--<img src="img/picture1.jpg" alt="裁剪图片" >-->
+    <div class="fuck">
+        啦啦啦啦
+    </div>
+</body>
+</html>

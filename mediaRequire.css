@@ -1,0 +1,57 @@
+@media (max-width:738px) {
+    thead tr{
+        background-color: #ffffff;
+    }
+    tbody tr:nth-child(even){
+        background-color: #ffffff;
+    }
+    thead{
+        display: none;
+       }
+    tr,td{
+        display: block;
+    }
+    tbody tr{
+          position: relative;
+      }
+    td{
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        text-align:left;
+        padding-left: 33%;
+    }
+
+    .action{
+        position: absolute;
+        top: 0px;
+        right: 8%;
+    }
+    table td:nth-child(12n+1){
+        background-color: #bdeb8a;
+
+
+    }
+    table td:nth-child(12n+2){
+
+    }
+
+    .number::before{
+        content: "课程编号";
+        position: absolute;
+        left: 5px;
+        font-weight: bold;
+    }
+    .name::before{
+        content: "课程名称";
+        position: absolute;
+        left: 5px;
+        font-weight: bold;
+    }
+    tr{
+        margin-bottom: 20px;
+        border-bottom: solid 1px #c7cecd;
+        box-shadow: 0 1px 10px 2px rgba(0,0,0,.2);
+    }
+
+}

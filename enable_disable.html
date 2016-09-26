@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enable和Disable的应用</title>
+    <style type="text/css">
+        input[type="text"]:enabled{
+            background-color: #60a3c5;
+        }
+        input[type="text"]:disabled{
+            background-color: #9facce;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="radio" name="radio" id="yes" onchange="selectText()">可选
+    <input type="radio" name="radio" id="no" onchange="selectText()">不可选
+    <input type="text" id="text" name="text" disabled>
+    <script type="application/javascript">
+        function selectText(){
+            var radio1 = document.getElementById("yes");
+            var radio2 = document.getElementById("no");
+            var text = document.getElementById("text");
+            if(radio1.checked)
+            {
+                text.disabled=false;
+                text.placeholder="please input";
+            }else{
+                text.value="";
+                text.disabled=true;
+            }
+
+
+        }
+    </script>
+</body>
+</html>

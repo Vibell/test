@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateNewNode</title>
+    <script type="application/javascript">
+        function onload(){
+            var divput = document.getElementById("divpp");
+            var insertp1 = document.createElement("p");
+            var insertp2 = document.createElement("p");
+            var insertp3 = document.createElement("p");
+            var insertspan = document.createElement("span");
+            var geth1 = divput.childNodes[0];
+            var getfooter = divput.childNodes[1];
+            insertp1.innerHTML = "1.像外星人；<br/>" ;
+            insertp2.innerHTML = "2.邋遢；<br/>" ;
+            insertp3.innerHTML = "3.不洗澡<br/>" ;
+            insertspan.style.color = "red";
+            insertspan.innerHTML = "臭死宝宝了！"
+
+            divput.insertBefore(insertp1,getfooter);
+        }
+
+    </script>
+</head>
+<body onload="onload()">
+    <div id="divpp">
+        <h1>WEC是个大傻逼</h1><br />
+        <footer>vivi所述</footer>
+    </div>
+</body>
+</html>

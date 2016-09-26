@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cartoon</title>
+    <style>
+        .div1{
+            background-color: #60a3c5;
+            width: 500px;
+            height: 500px;
+            margin: 10px;
+        }
+        .div2{
+            background-color: #9249a5;
+            width: 250px;
+            height: 250px;
+            /*transform: matrix(1,5,5,1,0,0) ;*/
+            /*-webkit-transform:matrix(1,5,5,1,0,0) ;*/
+            /*transform: rotateX(0deg);*/
+            /*transform: rotateY(0deg);*/
+            /*-webkit-transform:rotateX(0deg);*/
+            /*-webkit-transform:rotateY(0deg);*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        lalalala
+        <div class="div2" id="div2">
+            zazaza
+        </div>
+    </div>
+    <form>
+        <input type="range" name="num" id="range1" min="0" max="500" step="1" value="0" onchange="value_change1()">
+        <output id="output1">0</output>
+        <input type="range" name="num" id="range2" min="0" max="500" step="1" value="0" onchange="value_change2()">
+        <output id="output2">0</output>
+    </form>
+</body>
+<script>
+    function value_change1(){
+        var num1=document.getElementById("range1").value;
+
+        document.getElementById("output1").value=num1;
+
+        document.getElementById("div2").style.transform="rotateX("+num1+"deg)";
+
+    }
+    function value_change2(){
+        var num2=document.getElementById("range2").value;
+        document.getElementById("output2").value=num2;
+        document.getElementById("div2").style.transform="rotateY("+num2+"deg)";
+    }
+</script>
+</html>

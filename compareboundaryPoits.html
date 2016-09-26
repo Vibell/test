@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CompareBoundaryPoints</title>
+</head>
+
+<body>
+    <script type="application/javascript">
+        function compare(){
+            var divid = document.getElementById("divid");
+            var spandi = document.getElementById("spanid");
+            var rangeobj = document.createRange();
+         //   var rangeobj2 = document.createRange();
+            rangeobj.selectNodeContents(spanid);
+         //   rangeobj2.selectNodeContents(content);
+            var seletion = document.getSelection();
+
+            if (seletion.rangeCount>0){
+                var selectioncontent = seletion.getRangeAt(0);
+                if (selectioncontent.compareBoundaryPoints(Range.START_TO_END,rangeobj)<0){
+                    alert("当前位置在指定位置之前");
+                }else if (selectioncontent.compareBoundaryPoints(Range.END_TO_START,rangeobj)>0){
+                    alert("当前位置跟制定位置之后");
+                }else{
+                    alert("当前位置在制定位置重合");
+                }
+            }
+
+
+        }
+    </script>
+    <div id="divid">这个页面是用来<span id="spanid"><b>比较</b></span>范围的位置关心的 </div>
+    <button onclick="compare()">位置比较</button>
+</body>
+</html>
